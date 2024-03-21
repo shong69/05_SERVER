@@ -48,11 +48,26 @@ public class ExampleController1 extends HttpServlet{
 		//서버 -> 클라이언트 응답하기
 		//HttpServletResponse 객체 이용
 		
+		//응답하는 문서의 형식과 문자인코딩을 지정
+		resp.setContentType("text/html; charset=UTF8");
+		
 		// 서버 -> 클라이언트로 연결되는 스트림 얻어와서 출력형식으로 내보냄
 		// 서버에서 클라이언트로 응답하는 방법은 응답페이지(HTML)를 만들어서 보내는 방법임
 		PrintWriter out = resp.getWriter(); //서버 -> 클라이언트에게 씀(출력함)
 		
+		out.println("<!DOCTYPE html>");
+		out.println("<html>");
+		out.println("<head>");
+		out.println("<title> 서버 응답 결과</title>1");
+		out.println("</head>");
+		out.println("<body>");
 		
+		out.println("<h1>");
+		out.println(name+"님의 나이는"+age+"세 입니다.");
+		out.println("</h1>");
+		
+		out.println("</body>");
+		out.println("</html>");
 		
 		
 		
