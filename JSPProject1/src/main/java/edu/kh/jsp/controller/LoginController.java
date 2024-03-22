@@ -37,7 +37,7 @@ public class LoginController extends HttpServlet{
 		//**JSP 경로 작성방법 **
 		// ->webapp 폴더 기준으로 경로를 작성
 		RequestDispatcher dispatcher
-			= req.getRequestDispatcher("WEB-INF/views/loginResult.jsp");
+			= req.getRequestDispatcher("/WEB-INF/views/loginResult.jsp");
 		
 		//message 값을 속성(attribute)로 추가
 		// -> Map 형식으로 작성 (K:V)

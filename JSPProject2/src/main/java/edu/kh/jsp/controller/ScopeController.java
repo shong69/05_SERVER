@@ -48,7 +48,7 @@ public class ScopeController extends HttpServlet {
 		//***********************************************************
 		// scope의 우선순위 & 생명주기 확인하기
 		
-		//모든 범위에 같은 kye로 속성 세팅하기
+		//모든 범위에 같은 key로 속성 세팅하기
 		
 		req.setAttribute("str", "request 범위에 세팅된 문자열");
 		
