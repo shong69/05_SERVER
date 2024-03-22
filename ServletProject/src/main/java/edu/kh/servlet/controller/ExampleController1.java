@@ -58,12 +58,12 @@ public class ExampleController1 extends HttpServlet{
 		out.println("<!DOCTYPE html>");
 		out.println("<html>");
 		out.println("<head>");
-		out.println("<title> 서버 응답 결과</title>1");
+		out.println("<title> 서버 응답 결과</title>");
 		out.println("</head>");
 		out.println("<body>");
 		
 		out.println("<h1>");
-		out.println(name+"님의 나이는"+age+"세 입니다.");
+		out.println(name+"님의 나이는 "+age+"세 입니다.");
 		out.println("</h1>");
 		
 		out.println("</body>");

@@ -49,7 +49,7 @@ public class ExampleController2 extends HttpServlet{
 		
 		//client가 요청한 화면을 servlet에서 dispatcher에게 화면을 만들도록 함(req, resp을 전달해줌)
 		//
-		 RequestDispatcher dispatcher= req.getRequestDispatcher("WEB-INF/views.result.jsp"); //이 jsp파일로 위임하겠다
+		 RequestDispatcher dispatcher= req.getRequestDispatcher("/WEB-INF/views/result.jsp"); //이 jsp파일로 위임하겠다
 								//webapp폴더 기준 주소로 적음/ 해당 경로에 파일 만들어줘야함 / result.jsp는 요청대로 만든 파일 이름임
 		 
 		 dispatcher.forward(req, resp);
