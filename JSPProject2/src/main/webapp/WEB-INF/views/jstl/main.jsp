@@ -140,6 +140,31 @@
 	
 	
 	
+	<hr><hr><hr>
+	
+	
+	<%--현재 경로 : localhost:8080/jstl/main
+		목표 경로 : localhost:8080/jstl/student/selectAll
+	 --%>
+	<a href="student/selectAll">workbook에서 학생 전체 조회하기</a>
+	<%--student/selectAll 요청 처리할 selectAllController --%>
+	
+	
+	<%--현재 경로 : localhost:8080/jstl/main
+		목표 경로 : localhost:8080/jstl/student/selectArch
+	 --%>
+	<a href="student/selectArch">workbook에서 건축공학과인 학생만 찾기</a>
+	<%-- SelectArchController --%>
+	
+	
+	<%--현재 경로 : localhost:8080/jstl/main
+		목표 경로 : localhost:8080/jstl/student/selectOne
+	 --%>
+	<form action="student/selectOne" method="post">
+		<input type="text" name="deptName">
+		<button>찾기</button>
+	</form>
+	<%-- input에 작성한 학과의 학생 조회하기 SelectOneController --%>
 	
 	
 	
