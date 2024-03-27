@@ -82,6 +82,7 @@
 		<item key="DIALOG_HEIGHT" value="691"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 	</section>
+<<<<<<< HEAD
 	<section name="AddSourceFolderWizard.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="663"/>
 		<item key="DIALOG_Y_ORIGIN" value="113"/>
@@ -94,5 +95,9 @@
 	</section>
 	<section name="ClasspathContainerSelectionPage">
 		<item key="index" value="7"/>
+=======
+	<section name="NewPackageWizardPage">
+		<item key="create_package_info_java" value="false"/>
+>>>>>>> 1ae58fed1ddf5dd5310a97ce0b6447c686e0457f
 	</section>
 </section>
