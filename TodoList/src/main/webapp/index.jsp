@@ -32,6 +32,8 @@
 					</div>
 					
 					<button>로그인</button>
+					
+					<a href="/signup" class = "signup">회원가입</a>
 				</form>
 			</c:when>
 			<%-- 로그인을 했다면 : 현재 로그인한 사람의 투두리스트 출력 --%>
@@ -54,8 +56,13 @@
 								<td>${todo.todoTitle}</td> <%--dto에 적힌 값으로 가지고 와야 한다 --%>
 								<td>(${todo.todoMemo})</td>
 								<td>${todo.todoDate}</td>
-								<td><a class="update-btn">수정</a></td>
-								<td><a class="delete-btn">삭제</a></td>
+								<td><a href="/update?todoNo=${todo.todoNo}" 
+								class="update-btn">수정</a></td>
+								<td><a href="/delete?todoNo=${todo.todoNo}" 
+									onclick="return confirm('정말 삭제하시겠습니까?');"
+								class="delete-btn">삭제</a></td> 
+								<%-- href에 쿼리스트링 사용->key value 형태로 보내기(파라미터값이 넘어가는거임) --%>
+								<%-- onclick에서 true를 받아야 /delete?...로 페이지 넘어갈 수 있음 --%>
 							</tr>
 						
 						</c:forEach>
@@ -63,7 +70,7 @@
 				</c:otherwise>
 				</c:choose>
 				<div class = "button-div">
-					<a class="insert-btn">등록하기</a>
+					<a href="/insert" class="insert-btn">등록하기</a>
 					<a href="/logout" class="logout-btn">로그아웃</a>
 				</div>
 			</c:otherwise>		
