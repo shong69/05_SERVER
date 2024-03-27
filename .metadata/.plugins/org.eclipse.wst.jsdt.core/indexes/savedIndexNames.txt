@@ -1,24 +1,12 @@
-<<<<<<< HEAD
 INDEX VERSION 1.4+C:\Users\OWNER\Desktop\kh\05_SERVER\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2443307659.index
+1439791172.index
+2536411945.index
 3964235594.index
 1091468995.index
-1439791172.index
 45664146.index
-761448628.index
 237486739.index
-2536411945.index
-=======
-INDEX VERSION 1.4+C:\workspace\05_SERVER\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 4250553159.index
-264959492.index
-2458559897.index
-237486739.index
-2536411945.index
+761448628.index
+2443307659.index
 2470724118.index
-1190690982.index
-4008324331.index
-45664146.index
-537569147.index
-2030192112.index
->>>>>>> 1ae58fed1ddf5dd5310a97ce0b6447c686e0457f
+1328264742.index

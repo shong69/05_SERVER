@@ -4,7 +4,7 @@
 	<comment>driver.xml file!!</comment>
 	
 	<entry key="driver">oracle.jdbc.driver.OracleDriver</entry>
-	<entry key="url">jdbc:oracle:thin:@localhost:1521:XE</entry><!-- 선생님 db에 연결해서 사용중 -->
+	<entry key="url">jdbc:oracle:thin:@localhost:1521:XE</entry>
 	<entry key="user">todo_servlet</entry>
 	<entry key="password">todo_servlet</entry>
 	
