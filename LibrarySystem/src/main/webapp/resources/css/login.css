@@ -2,8 +2,13 @@
 .nanumgothiccoding * {
  font-family: 'Nanum Gothic Coding', monospace;
 }
-
-
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+   }
 
 *{
     box-sizing: border-box;
@@ -77,7 +82,8 @@ main{
     height : 450px;
     float :left;
     margin-left: 10px;
-
+    display : flex;
+    justify-content: space-around;
 }
 #search-input{
     border: 2px solid #f1f1f1;
@@ -100,64 +106,6 @@ input{
 }
 
 
-
-
-
-main div{
-
-    display: flex;
-    margin :30px 10px 10px 10px;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-td{
-    border: none;
-    width : 150px;
-    height: 100px;
-}
-a{
-    text-decoration: none;
-    text-align: center;
-   
-}
-td>a{
-    color: black;
-    display: block;
-    line-height: 100px;
-    border: 1px solid #dddd;
-    width : 150px;
-    height: 100px;
-    background-color: azure;
-}
-#book_shelf{
-    height: 800px;
-}
-
-#right-box {
-    padding-left: 30px;
-    border-left: 0.5px solid darkblue;
-    display: flex;
-    flex-direction: column;
-}
-
-#explain{
-    font-family: 'Nanum Gothic Coding';
-    list-style: none;
-}
-
-#explain li{
-    margin-bottom: 10px;
-}
-
-#notice {
-    margin-left: 10px;
-    width : 400px;
-    border-top: 0.5px solid darkblue;
-    padding-top: 20px;
-    display: inline;
-
-}
 footer{
     width : 1200px;
     height : 200px;
@@ -166,14 +114,6 @@ footer{
     background-color: #f1f1f1;
     margin:0 auto;
     margin-top: 50px;
-}
-
-h3{
-    font-family: 'Nanum Gothic Coding';
-    padding-bottom: 15px;
-}
-notice ul{
-    list-style: none;
 }
 footer div{
     
@@ -186,5 +126,20 @@ footer div{
     height: 30px;
     opacity: 0.8;
 }
+
+/******************************/
+
+
+#form{
+    margin : auto auto;
+}
+legend{
+    font-size: 30px;
+    font-family: 'NanumBarunGothic';
+    text-align: center;
+}
+
+
+
 
 
