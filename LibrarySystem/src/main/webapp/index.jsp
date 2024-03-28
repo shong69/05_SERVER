@@ -16,49 +16,23 @@
 	
 	<header>
 		<a href="/"><img id = "home-logo" src = "resources/images/huf_uni_logo.png"></a> <%--학교 로고 --%>
-		<h3>가나대학교 온라인 도서관</h3>
-		<input type="checkbox" id = "icon">
-		<label for ="icon">
-			<span></span>
-			<span></span>
-			<span></span>
-		</label>
-		<ul id = "hamburger-list">
-			<li><a href="#">도서관 안내</a></li>
-			<li><a href="#">자료 검색</a></li>
-		</ul>
+		<p id = "title">가나대학교 
+			온라인 도서관</p>
+		<div>
+			<a href="/signup">회원가입</a>
+			<a href="/login">로그인</a>
+		</div>
 
 	</header>
 				
 	<main>
-<!-- 로그인 페이지
-				<form action ="/" method="post">
-					<fieldset>
-						
-						<p>아이디</p>
-						<input type="text" name = "inputId">
-						
-						<p>비밀번호</p>
-						<input type="password" name ="inputPw">
-						<button>로그인</button><button>회원가입</button>
-						<div>
-						<span>
-							가나대학교 학번/사번을 가지고 있는 교내 이용자
-							| 아이디 : 종합정보 시스템에 등록된 학번 또는 사번
-							| 비밀번호 : 종합정보 시스템에 등록된 비밀번호
-							| 아이디, 비밀번호를 모르는 경우에는 종합정보시스템에서 확인하시기 바랍니다.
-						</span>
-						<span>
-							가나대학교 학번/사번이 없는 이용자(사이버가나대학교 포함)
-							| 회원가입 후 이용해주시기 바랍니다.
-						</span>
-						</div>
-					</fieldset>
-				</form>
--->
-
+		<div id = "input-box" >
+			<img srt = "이미지 주소">
+			<input id = "search-input" type = "text" placeholder="자료 검색" >
+		</div>
+		
 		<div>
-			<table>
+			<table id = "book-shelf">
 				<tr>
 					<td title = "총류"><a href="#">000</a></td> <!--서고 누르면 해당 분류의 도서 목록으로 이동-->
 					<td title = "철학"><a href="#">100</a></td>
@@ -85,33 +59,34 @@
 					<td title="역사"><a href="#">900</a></td>
 				</tr>
 			</table>
-		</div>
-
-
-		<div><!--책 찾는 법, 십진분류 별 설명, 도서 검색-->
-			<span>
+				
+			<div id = "right-box"> <!--책 찾는 법, 십진분류 별 설명, 도서 검색-->
 				<ul id ="explain">
 					<li>해당 도서관의 도서를 찾기 위한 도서 배치 안내도입니다. </li>
+					<li>000 : </li>
 				</ul>
-			</span>
-			<span>
-				
-			</span>
-			<div>
-				<input type="search" placeholder="도서를 검색하세요">
-				<button class = "btnClear"></button> <!--내용 삭제 버튼-->
+				<div id = "notice">
+					<h3>공지사항</h3>
+					<ul>
+						<li>그룹 스터디룸 운영시간 확대 안내</li>
+						<li>3월 취업 준비 강사 초빙 안내</li>
+						<li>2월 학술DB 활용 교육 신청 안내</li>
+					</ul>
+				</div>
 			</div>
 			
 		</div>
-								
-		
 
-	
 	</main>
+
+
 	<footer>
-		<a><img></a> <%--학교 로고 --%>
-		<a></a> <%-- 인스타 --%>
-		<a></a> <%-- 페이스북 --%>
+		<div>
+			<a><img></a> <%--학교 로고 --%>
+			<a></a> <%-- 인스타 --%>
+			<a></a> <%-- 페이스북 --%>
+		</div>
+
 		<select> 
 			<option value="">--교내 관련 사이트--</option>
 			<option></option>
