@@ -1,0 +1,61 @@
+
+*{
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+    border: 1px solid black;
+}
+body{
+    width : 1140px;
+
+}
+#home-logo {
+    width : 60px;
+
+}
+header {
+    width : 1140px;
+    display : flex;
+}
+
+main{
+    display : flex;
+}
+
+hamburger-list {
+    list-style: none;
+}
+input[id ="icon"]{
+    display : none;
+}
+input[id = "icon"] + label {
+    display: block;
+    width : 60px;
+    height: 40px;
+    cursor: pointer;
+}
+input[id="icon"] + label > span
+{
+    display : block;
+    height : 5px;
+    width : 100%;
+    border-radius : 30px;
+    background-color:azure;
+}
+a{
+    text-decoration: none;
+    color : black;
+}
+
+main>div:first-child{
+    width : 800px;
+}
+
+main>div:nth-child(2){
+    width: 500px;
+}
+
+
+#explain{
+    list-style: none;
+}
